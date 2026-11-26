@@ -1,0 +1,21 @@
+# ScrollFade Precise mode rules (bundled copy).
+# The app also downloads the newest copy of this file once a day from
+# https://rikhiidol86-lgtm.github.io/scrollfade-privacy/precise-rules.txt
+# and uses whichever has the higher version. Unknown lines are ignored.
+#
+# short_id     a visible view with this id = Reels/Shorts player on screen
+# selected_id  this id being selected (a tab) = Reels/Shorts
+# anchor_id    health check; if none is seen for 20 min in one visit, fall back to whole-app fade
+# app_enabled  false = kill switch, whole-app fade for that app
+version=1
+enabled=true
+
+app=com.instagram.android
+short_id=clips_viewer_view_pager
+short_id=clips_viewer_container
+selected_id=clips_tab
+
+app=com.google.android.youtube
+short_id=reel_player_page_container
+short_id=reel_recycler
+short_id=reel_watch_player
