@@ -7,9 +7,10 @@
 # short_id     a visible view with this id = Reels/Shorts player on screen
 # selected_id  this id being selected (a tab) = Reels/Shorts
 # feed_selected_id  this id selected = home feed (faded only if the user keeps "Also fade the feed" on)
+# exit_id / exit_selected_id  clearly another page: clear the fade at once (no 5 s hold)
 # anchor_id    health check; if none is seen for 20 min in one visit, fall back to whole-app fade
 # app_enabled  false = kill switch, whole-app fade for that app
-version=3
+version=4
 enabled=true
 
 app=com.instagram.android
@@ -17,6 +18,11 @@ short_id=clips_viewer_view_pager
 short_id=clips_viewer_container
 selected_id=clips_tab
 feed_selected_id=feed_tab
+exit_selected_id=direct_tab
+exit_selected_id=profile_tab
+exit_selected_id=search_tab
+exit_selected_id=feed_tab
+exit_id=direct_inbox_action_bar
 anchor_id=layout_container_main
 anchor_id=tab_bar
 anchor_id=swipe_navigation_container
@@ -25,6 +31,10 @@ app=com.google.android.youtube
 short_id=reel_player_page_container
 short_id=reel_recycler
 short_id=reel_watch_player
+exit_id=home_tabs_bar
+exit_id=youtube_logo
+exit_id=search_edit_text
+exit_id=you_tab_border
 anchor_id=pivot_bar
 anchor_id=watch_while_layout_coordinator_layout
 anchor_id=bottom_bar_container
