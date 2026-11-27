@@ -6,15 +6,17 @@
 #
 # short_id     a visible view with this id = Reels/Shorts player on screen
 # selected_id  this id being selected (a tab) = Reels/Shorts
+# feed_selected_id  this id selected = home feed (faded only if the user keeps "Also fade the feed" on)
 # anchor_id    health check; if none is seen for 20 min in one visit, fall back to whole-app fade
 # app_enabled  false = kill switch, whole-app fade for that app
-version=2
+version=3
 enabled=true
 
 app=com.instagram.android
 short_id=clips_viewer_view_pager
 short_id=clips_viewer_container
 selected_id=clips_tab
+feed_selected_id=feed_tab
 anchor_id=layout_container_main
 anchor_id=tab_bar
 anchor_id=swipe_navigation_container
